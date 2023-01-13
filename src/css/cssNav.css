@@ -1,0 +1,10 @@
+.bg-navBar{
+    background-color: #C7D2D9 !important;
+}
+.space-around{
+justify-content: space-around !important;
+}
+.css-otro{
+   flex-grow: 0;
+}
+

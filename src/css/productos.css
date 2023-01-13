@@ -1,0 +1,40 @@
+.card-18{
+    width: 19rem !important;
+    height: 25rem !important;
+}
+.select{
+    width: 12rem;
+margin-bottom: 20px;
+border-radius: 20px;
+text-align: center;
+}
+.card{
+    border-radius: 20px ;
+    overflow: hidden;
+}
+.bg-image{
+    background-color: #112E40;
+}
+.bg-products{
+    background-color: #C7D2D9 !important;
+}
+.img{    
+    width: 15rem !important;
+    height: 10.2rem !important;
+    margin: 0 auto;
+    padding: 1rem !important;
+}
+.bg-other{
+    color: #1FBF92;
+    font-weight: bold;
+    max-height: 70px;
+    text-align: center ;
+}
+.btn-green{
+    background-color: #1FBF92;
+    color: white;
+    
+}
+.card-body{
+    border-top: 1px solid black;
+}

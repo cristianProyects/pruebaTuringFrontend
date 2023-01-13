@@ -1,0 +1,23 @@
+.bg-evolution{
+    background-color: #C7D2D9 !important;    
+}
+.bg-evolution img{    
+    width: 260px;
+    max-height: 260px;
+    padding: 50px;
+    ;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.center{
+    margin-bottom: 50px;
+}
+.bg-green{
+    background-color: #1FBF92;
+    border-radius: 30px;
+    margin-bottom: 20px !important
+}
