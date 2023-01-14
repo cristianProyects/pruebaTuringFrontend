@@ -1,24 +1,24 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "./components/home";
 import Login from "./components/login";
+import Home from "./components/home";
+import Admin from "./components/admin";
+import "./css/html.css"
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="">
         <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
           <Route path="/inicio">
             <Home />
           </Route>
+          <Route path="/admin">
+            <Admin />
+          </Route>
           <Route path="/" exact>
-            COMPONENT ROOT
+            <Login />
           </Route>
         </Switch>
-      </div>
     </BrowserRouter>
   );
 }

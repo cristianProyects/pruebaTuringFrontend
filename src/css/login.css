@@ -1,0 +1,15 @@
+.card-login{
+    max-width: 25rem !important;
+    height: 38rem !important;
+}
+.input-text{
+    margin: 20px 0;
+}
+.card-image{
+    margin: 0 auto;
+    max-width: 22rem !important;
+}
+.bg-login{
+    padding-top: 80px;
+    background-color: #112E40;
+}

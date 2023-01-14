@@ -6,22 +6,22 @@ import evo3 from "../img/evo3.png"
 import evo4 from "../img/evo4.png"
 const evolution=()=>{
     return (
-        <div className="bg-evolution">
+        <div className="bg-evolution" id="evolucion">
             <div className="flex">
-                <h2 className="center">EVOLUCIONA TU PC</h2>
+                <h2 className="center p-5">EVOLUCIONA TU PC</h2>
             </div>
             <div className="flex ">
-                <div class="text-center bg-green flex">
-                    <img src={evo1} class="rounded" alt="..." />
+                <div className="text-center bg-green flex">
+                    <img src={evo1} className="rounded" alt="..." />
                 </div>
-                <div class="text-center bg-green">
-                    <img src={evo2} class="rounded" alt="..." />
+                <div className="text-center bg-green">
+                    <img src={evo2} className="rounded" alt="..." />
                 </div>
-                <div class="text-center bg-green flex">
-                    <img src={evo3} class="rounded" alt="..." />
+                <div className="text-center bg-green flex">
+                    <img src={evo3} className="rounded" alt="..." />
                 </div>
-                <div class="text-center bg-green">
-                    <img src={evo4} class="rounded" alt="..." />
+                <div className="text-center bg-green">
+                    <img src={evo4} className="rounded" alt="..." />
                 </div>
             
             </div>

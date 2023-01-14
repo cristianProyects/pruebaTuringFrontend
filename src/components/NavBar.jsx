@@ -35,9 +35,6 @@ const navbar = () => {
                   <Link to="/inicio" className="nav-link">
                     Inicio
                   </Link>
-                  <Link to="/productos" className="nav-link">
-                    Productos
-                  </Link>
                 </ul>
               </BrowserRouter>
             </ul>

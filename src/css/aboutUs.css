@@ -1,0 +1,9 @@
+.bg-about{
+    background-color: #C7D2D9 !important;   
+}
+.bg-about .card{
+    border: 0;
+}
+.bg-about .card-body{
+    border: 0;
+}

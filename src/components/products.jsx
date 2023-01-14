@@ -2,6 +2,18 @@ import React , { useState as state,useEffect as effect } from "react";
 import "../css/productos.css";
 import laptop from "../img/laptop.png"
 import computadora from "../img/computadora.png"
+import axios from "axios";
+
+axios.interceptors.request.use(function(config){
+  const token=localStorage.getItem("token")
+  if(token){
+      config.headers.Authorization= `Bearer ${token}`
+  }
+  return config;
+})
+axios.interceptors.response.use(function(response){
+  return response;
+})
 
 const products = () => {
   const [category, setCategory] = state([]);
@@ -11,9 +23,8 @@ const products = () => {
     obtenerProductos(1);
   },[]);
      const obtenerCategorias=async ()=>{
-        const data=await fetch(`http://${window.location.hostname}:3500/api/category/selectAll`)
-        const p=await data.json()        
-        setCategory(p.data)
+        const data=await axios.get(`http://${window.location.hostname}:3500/api/category/selectAll`)   
+        setCategory(data.data.data)
      }
      const [selected, setSelected] = state([]);
 
@@ -22,9 +33,8 @@ const products = () => {
     obtenerProductos(event.target.value)
   };
      const obtenerProductos=async (id)=>{
-        const data=await fetch(`http://${window.location.hostname}:3500/api/component/select/${id}`)
-        const p=await data.json()
-        setProduct(p.data)
+        const data=await axios.get(`http://${window.location.hostname}:3500/api/component/select/${id}`)
+        setProduct(data.data.data)
      }
   return (
     <div className="bg-products p-5">
@@ -36,7 +46,7 @@ const products = () => {
   }
 </select>
     
-      <div className="card-group">
+      <div className="card-group" id="productos">
         {product.map((product, i) => (
           <div className="card-deck mx-auto" key={product.id}>
             <div className="card mt-2 bg-transparent card-18">

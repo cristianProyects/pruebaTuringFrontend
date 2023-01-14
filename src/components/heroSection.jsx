@@ -2,7 +2,7 @@ import React from "react";
 import "../css/heroSection.css";
 const herosection = () => {
   return (
-    <div className="bg-heroSection text-white">
+    <div className="bg-heroSection text-white" id="inicio">
       <div className="px-4 py-5  text-center bg-heroSection">
         <h1 className="display-5 fw-bold">TecnoCompras</h1>
         <div className="col-lg-6 mx-auto">

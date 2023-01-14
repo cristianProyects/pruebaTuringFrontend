@@ -1,0 +1,16 @@
+.bg-footer{
+    background-color: #112E40 !important;
+    color:white;
+}
+.text-white{
+    color: white !important;
+}
+.social-media svg{
+    margin: 10px;
+    background-color: #1FBF92;
+    padding: 5px;
+    border-radius: 10px;
+}
+.text-green{
+    color: #1FBF92;
+}
